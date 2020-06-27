@@ -5,6 +5,10 @@ enum Turn {
     Bot,
 }
 
+enum Action {
+    Hit,
+    Stay,
+}
 
 pub struct Twentyone {
     current_turn: Turn,
@@ -22,7 +26,8 @@ impl Twentyone {
         }
     }
 
-    pub fn play_game() {
+    pub fn play_game(&mut self) {
+
 
     }
 

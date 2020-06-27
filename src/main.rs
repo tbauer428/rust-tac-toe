@@ -21,24 +21,36 @@ fn main() {
 
             if temp.trim() == "1" {
 
-                println!("Welcome to Tic-Tac-Toe!");
-
-                let mut game = Game::new();
-
-                game.play_game();
+                play_tic_tac_toe()
 
             }else if temp.trim() == "2" {
 
-                println!("Pardon our dust!");
-
-                let mut twentyone = Twentyone::new();
-
-                twentyone.play_game()
+                play_twenty_one()
 
             }
 
         }
         Err(_) => (),
+    }
+
+    fn play_tic_tac_toe() {
+
+        println!("Welcome to Tic-Tac-Toe!");
+
+        let mut game = Game::new();
+
+        game.play_game();
+
+    }
+
+    fn play_twenty_one() {
+
+        println!("Pardon our dust!");
+
+        let mut twentyone = Twentyone::new();
+
+        twentyone.play_game()
+
     }
 
 
